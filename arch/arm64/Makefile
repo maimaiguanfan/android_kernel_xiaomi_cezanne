@@ -67,7 +67,7 @@ else
 # This is a workaround for avoid kasan build error
 # Add by xiaomi libin16
 ifneq ($(CONFIG_KASAN),y)
-KBUILD_CFLAGS	+= -mgeneral-regs-only
+#KBUILD_CFLAGS	+= -mgeneral-regs-only
 endif
 endif
 KBUILD_CFLAGS	+= $(lseinstr) $(brokengasinst)
