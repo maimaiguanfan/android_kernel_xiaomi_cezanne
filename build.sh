@@ -3,8 +3,8 @@ export ARCH=arm64
 export SUBARCH=arm64
 export HEADER_ARCH=arm64
 export CC=/home/maimaiguanfan/google-clang/clang-r353983c1/bin/clang
-export CROSS_COMPILE=/home/maimaiguanfan/gcc-arm-9.2-2019.12-x86_64-aarch64-none-linux-gnu/bin/aarch64-none-linux-gnu-
-export CROSS_COMPILE_ARM32=/home/maimaiguanfan/gcc-arm-9.2-2019.12-x86_64-arm-none-eabi/bin/arm-none-linux-gnueabi-
+export CROSS_COMPILE=/home/maimaiguanfan/gcc/gcc-arm-9.2-2019.12-x86_64-aarch64-none-linux-gnu/bin/aarch64-none-linux-gnu-
+export CROSS_COMPILE_ARM32=/home/maimaiguanfan/gcc/gcc-arm-9.2-2019.12-x86_64-arm-none-eabi/bin/arm-none-linux-gnueabi-
 
 if [ -f tools/AnyKernel3/anykernel.sh ];
 then
