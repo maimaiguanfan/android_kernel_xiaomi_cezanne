@@ -24,12 +24,12 @@ read v
 echo " "
 export EV=EXTRAVERSION=-MGF-V$v
 rm -rf out/arch/arm64/boot/Image.gz-dtb
-make O=out $EV cezanne_user_defconfig
+make O=out $EV MGF_cezanne_defconfig
 make O=out $EV CC=/home/maimaiguanfan/google-clang/clang-r353983c1/bin/clang -j$(nproc --all)
 
 if [ -f out/arch/arm64/boot/Image.gz-dtb ];
 then
-	mv out/arch/arm64/boot/Image.gz-dtb tools/AnyKernel3/Image.gz-dtb
+	cp out/arch/arm64/boot/Image.gz-dtb tools/AnyKernel3/Image.gz-dtb
 	cd tools/AnyKernel3
 	zip -r9 MGF-V"$v"_K30U.zip * > /dev/null
 	cd ../..
